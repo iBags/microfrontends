@@ -1,1 +1,1 @@
-document.querySelector('#container').innerHTML = `<h1>Soy el fucking container</h1>`
+import('./bootstrap')
