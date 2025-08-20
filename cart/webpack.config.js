@@ -13,7 +13,11 @@ module.exports = {
       exposes: {
         './CartIndex': './src/index'
       },
-      shared: ['faker']
+      shared: {
+        faker: {
+          singleton: true,
+        }
+      }
     }),
     new HtmlPlugin({
       template: './public/index.html',
